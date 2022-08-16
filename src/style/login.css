@@ -1,155 +1,151 @@
-
 .logo {
-    display: inline-block;
-    width: 200px;
-    height: 160px;
-    background-image: url("../images/Logo.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-top: 40px;
+  display: inline-block;
+  width: 200px;
+  height: 160px;
+  background-image: url("../images/Logo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 40px;
 }
 
 .title {
-    font-size: 50px;
-    margin-top: 20px;
-    color: #024155;
+  font-size: 50px;
+  margin-top: 20px;
+  color: #024155;
 }
 
 .caption {
-    margin-top: 5px;
-    margin-bottom: 50px;
-    font-size: 17px;
+  margin-top: 5px;
+  margin-bottom: 50px;
+  font-size: 17px;
 }
 
-.emailbox{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 15px;
+.emailbox {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
 }
 
 .emailpng {
-    background-image: url("../images/email.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 20px;
-    height: 40px;
+  background-image: url("../images/email.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 20px;
+  height: 40px;
 }
 
 .email1 {
-    margin-left: 10px;
-    border: #ffffff;
-    border-bottom: 1px solid rgba(0,0,0,0.2);
-    width: 300px;    
-    
+  margin-left: 10px;
+  border: #ffffff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  width: 300px;
 }
 
 .password {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 10px; 
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
 }
 
 .passwordpng {
-    background-image: url("../images/pass.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 18px;
-    height: 40px;
+  background-image: url("../images/pass.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 18px;
+  height: 40px;
 }
 
-.pass{
-    margin-left: 10px;
-    border: #ffffff;
-    border-bottom: 1px solid rgba(0,0,0,0.2);
-    width: 300px;   
+.pass {
+  margin-left: 10px;
+  border: #ffffff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  width: 300px;
+}
+
+input::placeholder{
+    opacity: .5;
 }
 
 .forgot {
-    margin-left: 190px;
-    margin-top: 10px;
-    font-weight:500;
-    font-size: 18px;
-    color: #024155;
-    margin-bottom: 30px;
+  margin-left: 190px;
+  margin-top: 10px;
+  font-weight: 500;
+  font-size: 18px;
+  color: #024155;
+  margin-bottom: 30px;
 }
 
 .login {
-    background-color: #024155;
-    width: 235px;
-    height: 27px;
-    font-weight: 500;
-    color: white;
-    border-radius: 12px;
-    padding-top: 10px;
-    margin: auto;
-    margin-bottom: 10px;
-    
+  background-color: #024155;
+  width: 235px;
+  height: 27px;
+  font-weight: 500;
+  color: white;
+  border-radius: 12px;
+  padding-top: 10px;
+  margin: auto;
+  margin-bottom: 10px;
 }
 .signup {
-    color: #024155;
-    width: 235px;
-    height: 27px;
-    font-weight: 500;
-    background-color: #869AA0;
-    border-radius: 12px;
-    padding-top: 10px;
-    margin: auto;
-    margin-bottom: 10px;   
+  color: #024155;
+  width: 235px;
+  height: 27px;
+  font-weight: 500;
+  background-color: #869aa0;
+  border-radius: 12px;
+  padding-top: 10px;
+  margin: auto;
+  margin-bottom: 10px;
 }
 
-
-
-.or{
-    padding-top: 20px;
-    margin-bottom:30px;
-    display: flex;
-    flex-direction: row;
-    color: #869AA0;
-
+.or {
+  padding-top: 20px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: row;
+  color: #869aa0;
 }
-.or:before, .or:after {
-    content: " ";
-    flex: 1 1;
-    border-bottom: 1px solid rgba(0,0,0,0.2);
-    margin:auto;
+.or:before,
+.or:after {
+  content: " ";
+  flex: 1 1;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  margin: auto;
 }
-.or:before{
-    margin-right: 40px;
+.or:before {
+  margin-right: 40px;
 }
-.or:after{
-    margin-left: 40px;
+.or:after {
+  margin-left: 40px;
 }
 
-
-
-
-.socialicons{
-    display:flex;
-    justify-content: center;
-    margin-top: 30px;
+.socialicons {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
 }
 
 .fb {
-    background-image: url("../images/fb.png");
-    width: 50px;
-    height: 50px;
-    background-repeat: no-repeat;
+  background-image: url("../images/fb.png");
+  width: 50px;
+  height: 50px;
+  background-repeat: no-repeat;
 }
 .tw {
-    background-image: url("../images/tw.png");
-    width: 50px;
-    height: 50px;
-    background-repeat: no-repeat;
+  background-image: url("../images/tw.png");
+  width: 50px;
+  height: 50px;
+  background-repeat: no-repeat;
 }
 .ig {
-    background-image: url("../images/ig.png");
-    width: 50px;
-    height: 50px;
-    background-repeat: no-repeat;
+  background-image: url("../images/ig.png");
+  width: 50px;
+  height: 50px;
+  background-repeat: no-repeat;
 }
 .linkedin {
-    background-image: url("../images/linkedin.png");
-    width: 50px;
-    height: 50px;
-    background-repeat: no-repeat;
+  background-image: url("../images/linkedin.png");
+  width: 50px;
+  height: 50px;
+  background-repeat: no-repeat;
 }
