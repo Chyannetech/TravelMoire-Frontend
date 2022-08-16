@@ -1,20 +1,20 @@
-import { Link } from "react-router-dom";
+import { BrowserRouter, Routes, Route} from 'react-router-dom';
+import Login from './components/Login';
+import './App.css';
 
-
-export default function App() {
+function App() {
   return (
-    <div>
-   <h1>Travelmoire</h1>
-   <nav
-   style={{ borderBottom: "solid 1px",
-            paddingBottom: "1rem",
-   }}
-   >
-<Link to="/invoices">Invoices</Link> |{" "}
-        <Link to="/expenses">Expenses</Link>
-   </nav>
+    <div className='app'>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Login />} />
+      </Routes>
+    </BrowserRouter>
+   
+   
     </div>
   );
 }
 
 
+export default App;
