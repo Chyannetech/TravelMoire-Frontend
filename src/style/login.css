@@ -27,7 +27,7 @@
 }
 
 .emailpng {
-  background-image: url("../images/email.png");
+  background-image: url("../images/Login/email.png");
   background-repeat: no-repeat;
   background-position: center;
   width: 20px;
@@ -48,7 +48,7 @@
 }
 
 .passwordpng {
-  background-image: url("../images/pass.png");
+  background-image: url("../images/Login/pass.png");
   background-repeat: no-repeat;
   background-position: center;
   width: 18px;
@@ -126,25 +126,25 @@ input::placeholder{
 }
 
 .fb {
-  background-image: url("../images/fb.png");
+  background-image: url("../images/Login/fb.png");
   width: 50px;
   height: 50px;
   background-repeat: no-repeat;
 }
 .tw {
-  background-image: url("../images/tw.png");
+  background-image: url("../images/Login/tw.png");
   width: 50px;
   height: 50px;
   background-repeat: no-repeat;
 }
 .ig {
-  background-image: url("../images/ig.png");
+  background-image: url("../images/Login/ig.png");
   width: 50px;
   height: 50px;
   background-repeat: no-repeat;
 }
 .linkedin {
-  background-image: url("../images/linkedin.png");
+  background-image: url("../images/Login/linkedin.png");
   width: 50px;
   height: 50px;
   background-repeat: no-repeat;
