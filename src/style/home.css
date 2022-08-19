@@ -1,11 +1,7 @@
 .offcanvas{
-  width: 414px;
-  height: 800px;
-  border-radius: 20px;
-  padding: 0px;
+  height:900px;
   background-color: black;
 }
-
 
 .titleHome {
   font-size: 50px;
@@ -87,6 +83,7 @@
   }
 
 
+
   .userPic{
     background-image: url("../images/Home/daisy.png");
     background-repeat: no-repeat;
@@ -98,6 +95,8 @@
    text-align: left;
   }
 
+
+
   .postBox{
     display:block;
     justify-content: space-between;
@@ -105,12 +104,33 @@
     margin-right: 200px;
     text-align: left;
   }
-  .postBox2{
+  
+  @media only screen and (max-width: 768px) {
+  .postBox{
+    
+    display:inline;
+    margin-left: 10px;
+    margin-right: 100px;
+    text-align: left;
+  }
+}
+
+  .postBox2{ 
     display:block;
     justify-content: space-between;
+    
     margin-left: 200px;
     margin-right: 200px;
     text-align: left;
+  }
+
+  @media only screen and (max-width: 900px) {
+    .postBox2{
+      display:inline;
+      margin-right: 0px;
+      margin-top: -90px;
+      text-align:left;
+    }
   }
 
   .city{
@@ -163,6 +183,8 @@
   padding-top: 3px;
   margin-left: 20px;
 }
+
+
 
 .createNew{
   background-color: #024155;
