@@ -1,8 +1,9 @@
 .offcanvas{
   width: 414px;
-  height: 381px;
+  height: 800px;
   border-radius: 20px;
   padding: 0px;
+  background-color: black;
 }
 
 

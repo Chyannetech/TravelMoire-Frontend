@@ -4,14 +4,12 @@ import Offcanvas from 'react-bootstrap/Offcanvas';
 import { useState } from "react"
 import { useNavigate } from 'react-router';
 
-const Home = ({setNavBool}) =>  {
+const Home = () =>  {
     
     const [show, setShow] = useState(false);
 
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
-
-    const navigate=useNavigate()
 
 return (
 <div className='homePage'>
@@ -52,18 +50,8 @@ return (
      
      <div className='viewPost' onClick={handleShow}>View Post</div>
 
-     <Offcanvas show={show} onHide={handleClose}>
-       <Offcanvas.Header className='xbutton' closeButton>
-       </Offcanvas.Header>
-       <Offcanvas.Body>
-         Some text as placeholder. In real life you can have the elements you
-         have chosen. Like, text, images, lists, etc.
-       </Offcanvas.Body>
-     </Offcanvas>
-   </>
-     
-
-
+  
+   </> 
     </div>
    
 {/* End of User Post */}
@@ -132,6 +120,16 @@ return (
     <div className='viewPost' onClick={handleShow}>View Post</div>
     </div>
 {/* End of User Post */}
+
+
+<Offcanvas show={show} onHide={handleClose}>
+       <Offcanvas.Header closeButton>
+       </Offcanvas.Header>
+       <Offcanvas.Body>
+         Some text as placeholder. In real life you can have the elements you
+         have chosen. Like, text, images, lists, etc.
+       </Offcanvas.Body>
+     </Offcanvas>
 
 <div className='createNew'>Create New Post</div>
 </div>
