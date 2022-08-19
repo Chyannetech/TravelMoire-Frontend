@@ -1,7 +1,15 @@
+.titleHome {
+  font-size: 50px;
+  margin-top: 40px;
+  color: #024155;
+}
+
+
 .searchContainer {
     display: flex;
     justify-content: center;
     margin-bottom: 15px;
+    margin-top: -50px;
   }
 
   .searchBox{
@@ -62,4 +70,103 @@
     text-decoration-color: #024155;
   }
 
+  .userPost{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 20px;
+    padding: 20px;
+  }
+
+
+  .userPic{
+    background-image: url("../images/Home/daisy.png");
+    background-repeat: no-repeat;
+    height: 60px;
+    width: 60px;
+  }
+
+  .name{
+   text-align: left;
+  }
+
+  .postBox{
+    display:block;
+    justify-content: space-between;
+    margin-left: 200px;
+    margin-right: 200px;
+    text-align: left;
+  }
+  .postBox2{
+    display:block;
+    justify-content: space-between;
+    margin-left: 200px;
+    margin-right: 200px;
+    text-align: left;
+  }
+
+  .city{
+    background-image: url("../images/Home/location.png");
+    background-repeat: no-repeat;
+    padding-left: 20px;
+    height:30px; 
+    margin: 10px;
+  }
+
+  .view{
+    background-image: url("../images/Home/camera.png");
+    background-repeat: no-repeat;
+    padding-left: 20px;
+    height:30px; 
+    margin: 10px;
+  }
+
+  .tb{
+    background-image: url("../images/Home/travelbuds.png");
+    background-repeat: no-repeat;
+    padding-left: 20px;
+    height:30px; 
+    margin: 10px;
+  }
+  .location{
+    background-image: url("../images/Home/leaf.png");
+    background-repeat: no-repeat;
+    padding-left: 20px;
+    height:30px; 
+    margin: 10px;
+  }
+
+  .reviews{
+    text-align: left;
+    margin-top: -20px;
+    color:#869AA0 ;
+  }
+
+.viewPost{
+  background-color: #024155;
+  width: 100px;
+  height: 18px;
+  font-size: small;
+  font-weight: 500;
+  color: white;
+  margin: auto;
+  margin-top: 8px;
+  border-radius: 12px;
+  padding-top: 3px;
+  margin-left: 20px;
+}
+
+.createNew{
+  background-color: #024155;
+  background-image: url("../images//Home/plus.png");
+  background-repeat: no-repeat;
+  background-position-x: 20px;
+  background-position-y: 10px;
+  width: 235px;
+  height: 27px;
+  font-weight: 500;
+  color: white;
+  border-radius: 12px;
+  padding-top: 10px;
+  margin: auto;
+}
   
