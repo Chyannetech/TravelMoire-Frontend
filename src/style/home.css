@@ -1,3 +1,11 @@
+.offcanvas{
+  width: 414px;
+  height: 381px;
+  border-radius: 20px;
+  padding: 0px;
+}
+
+
 .titleHome {
   font-size: 50px;
   margin-top: 40px;

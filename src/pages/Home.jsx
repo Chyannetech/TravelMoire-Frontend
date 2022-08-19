@@ -1,7 +1,18 @@
 import React from 'react'
 import "../style/home.css";
+import Offcanvas from 'react-bootstrap/Offcanvas';
+import { useState } from "react"
+import { useNavigate } from 'react-router';
 
-const Home = () =>  {
+const Home = ({setNavBool}) =>  {
+    
+    const [show, setShow] = useState(false);
+
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
+
+    const navigate=useNavigate()
+
 return (
 <div className='homePage'>
 <div className="titleHome">travel | moire</div>
@@ -29,7 +40,7 @@ return (
     </div>
 
     <div className='postBox'>
-    <div className='city'>Atlanta</div>
+    <div className='city'>Atlanta, GA</div>
     <div className='tb'>Chika, Steve, Tom</div>
     </div>
     
@@ -37,9 +48,24 @@ return (
     <div className='view'>View Media</div>
     <div className='location'>Piedmont Park</div><div className='reviews'>63.6k posts</div>
     </div>
+    <>
+     
+     <div className='viewPost' onClick={handleShow}>View Post</div>
 
-    <div className='viewPost'>View Post</div>
+     <Offcanvas show={show} onHide={handleClose}>
+       <Offcanvas.Header className='xbutton' closeButton>
+       </Offcanvas.Header>
+       <Offcanvas.Body>
+         Some text as placeholder. In real life you can have the elements you
+         have chosen. Like, text, images, lists, etc.
+       </Offcanvas.Body>
+     </Offcanvas>
+   </>
+     
+
+
     </div>
+   
 {/* End of User Post */}
 
 
@@ -51,7 +77,7 @@ return (
     </div>
 
     <div className='postBox'>
-    <div className='city'>Atlanta</div>
+    <div className='city'>Atlanta, GA</div>
     <div className='tb'>Chika, Steve, Tom</div>
     </div>
     
@@ -60,7 +86,7 @@ return (
     <div className='location'>Piedmont Park</div><div className='reviews'>63.6k posts</div>
     </div>
 
-    <div className='viewPost'>View Post</div>
+    <div className='viewPost' onClick={handleShow}>View Post</div>
     </div>
 {/* End of User Post */}
 
@@ -72,7 +98,7 @@ return (
     </div>
 
     <div className='postBox'>
-    <div className='city'>Atlanta</div>
+    <div className='city'>Atlanta, GA</div>
     <div className='tb'>Chika, Steve, Tom</div>
     </div>
     
@@ -81,7 +107,7 @@ return (
     <div className='location'>Piedmont Park</div><div className='reviews'>63.6k posts</div>
     </div>
 
-    <div className='viewPost'>View Post</div>
+    <div className='viewPost' onClick={handleShow}>View Post</div>
     </div>
 {/* End of User Post */}
 
@@ -93,7 +119,7 @@ return (
     </div>
 
     <div className='postBox'>
-    <div className='city'>Atlanta</div>
+    <div className='city'>Atlanta, GA</div>
     <div className='tb'>Chika, Steve, Tom</div>
     </div>
     
@@ -102,7 +128,8 @@ return (
     <div className='location'>Piedmont Park</div><div className='reviews'>63.6k posts</div>
     </div>
 
-    <div className='viewPost'>View Post</div>
+
+    <div className='viewPost' onClick={handleShow}>View Post</div>
     </div>
 {/* End of User Post */}
 
