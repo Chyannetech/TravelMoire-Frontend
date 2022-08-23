@@ -1,26 +1,32 @@
 import React from "react";
 import "../style/create.css";
-import { useNavigate } from 'react-router-dom'
-import { useState } from 'react'
-
 
 const Create = () => {
-
-  const navigate = useNavigate()
-
-    return (
+  return (
     <div className="createform">
       <div className="title">travel | moire</div>
-      <div className="caption">
-        Popular nearby / Create new post
+      <div className="caption">Popular nearby / Create new post</div>
+      <div></div>
+      <div className="cat-caption">Select a Category</div>
+      <div className="categories2">
+        <ul>Art</ul>
+        <ul>National Parks</ul>
+        <ul>Beaches</ul>
+        <ul>Restaurants</ul>
       </div>
-      <div className="cat-caption">
-        Select a Category
-      </div>
-      <div className='userImg'></div>
+      <div className="userImg"></div>
 
       <form>
-      
+        <div className="categoryForm">
+          <div className="addCategory">Add Category</div>
+          <input
+            className="categoryInput"
+            type="text"
+            name="text"
+            required
+            placeholder=""
+          ></input>
+        </div>
         <div className="locationForm">
           <div className="addLocation">Add Location</div>
           <input
@@ -28,11 +34,9 @@ const Create = () => {
             type="text"
             name="text"
             required
-            placeholder="Ex: Atlanta, GA"
+            placeholder=""
           ></input>
-          </div>
-        
-        
+        </div>
 
         <div className="placeForm">
           <div className="addPlace">Place Visited</div>
@@ -55,16 +59,14 @@ const Create = () => {
           ></input>
         </div>
       </form>
-<div className="photodiv">
-      <div className="sharePic">Share a photo
-            </div>
-            <div className="travelPic"> 
-                <div className="cameraimg"> </div>
-    
-                <div className="createNew2" onClick={()=>navigate('/create')}>Create New Post</div>
-    
+      <div className="photodiv">
+        <div className="sharePic">Share a photo</div>
+        <div className="travelPic">
+          <div className="cameraimg"> </div>
+
+          <div className="createNew2">Create New Post</div>
+        </div>
       </div>
-</div>
     </div>
   );
 };

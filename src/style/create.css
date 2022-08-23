@@ -1,6 +1,6 @@
 .caption {
   text-align: left;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: bolder;
   margin-left: 20px;
   margin-top: 50px;
@@ -9,11 +9,20 @@
 
 .cat-caption {
   font-weight: bolder;
-  font-size: 18px;
+  font-size: 16px;
   text-align: left;
   margin-left: 20px;
   margin-bottom: 20px;
 }
+
+.categories2 {
+  display: flex;
+  justify-content: center;
+  margin-top: -7px;
+  margin-right: 45px;
+  
+}
+
 
 .userImg {
   background-image: url("../images/Home/daisy.png");
@@ -23,6 +32,30 @@
   height: 60px;
   width: 60px;
 }
+
+.addCategory {
+  font-weight: 800;
+  font-size: 15px;
+  white-space: nowrap; 
+  }
+  
+  .categoryForm {
+    display: flex;
+    justify-content: left;
+    margin-bottom: 15px;
+    margin-left: 10px;
+    text-align: justify;
+  }
+  
+  .categoryInput {
+    margin-left: 10px;
+    border: #ffffff;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    width: 250px;
+    background: transparent;
+  }
+  
+
 
 .addLocation {
 font-weight: 800;
@@ -46,9 +79,6 @@ white-space: nowrap;
   background: transparent;
 }
 
-input::placeholder {
-  opacity: 0.5;
-}
 
 .addPlace {
   font-weight: 800;
