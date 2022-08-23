@@ -1,0 +1,91 @@
+.caption {
+    margin-top: 70px;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+.createForm{
+    margin-left: 500px;
+    margin-right: 500px;  
+}
+
+.userImg{
+    background-image: url("../images/Home/daisy.png");
+    background-repeat: no-repeat;
+    height: 60px;
+    width: 60px;
+  }
+
+
+.addLocation {
+    font-weight: 800;
+}
+  
+  .location-form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+  
+  
+  .location-input {
+    margin-left: 10px;
+    border: #ffffff;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    width: 300px;
+  }
+  
+  .locationForm {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  
+  .locationInput {
+    margin-left: 10px;
+    border: #ffffff;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    width: 300px;
+  }
+  
+  input::placeholder{
+      opacity: .5;
+  }
+
+  .addPlace {
+    font-weight: 800;
+}
+  
+  .placeForm {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  
+  .placeInput {
+    margin-left: 10px;
+    border: #ffffff;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    width: 300px;
+  }
+
+  .addBuddies {
+    font-weight: 800;
+}
+
+  .buddyForm {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  
+  .buddyInput {
+    margin-left: 10px;
+    border: #ffffff;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    width: 300px;
+  }
+  
+
+
+  
+  

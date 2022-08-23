@@ -122,7 +122,6 @@ return (
     <div className='location'>Piedmont Park</div><div className='reviews'>63.6k posts</div>
     </div>
 
-
     <div className='viewPost' onClick={handleShow}>View Post </div>
     </div>
 {/* End of User Post */}
