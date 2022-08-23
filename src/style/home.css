@@ -1,3 +1,7 @@
+body {
+  background-color: whitesmoke;
+}
+
 .offcanvas{
   height:900px;
   background-color: black;
@@ -20,7 +24,7 @@
     margin-top: 100px;
     text-align: center;
     border: 1px solid rgba(0, 0, 0, 0.2);
-    width: 350px;
+    width: 275px;
     height: 35px;
     border-radius: 8px;
   }
@@ -44,7 +48,7 @@
   }
 
   .trending > div {
-    margin: -10px;
+    margin-left: -30px;
   }
 
   .travelBuds{
@@ -55,18 +59,17 @@
   }
 
   .popular{
-    font-weight: 500;
+    font-weight: bolder;
   }
 
   .categories{
     display: flex;
     justify-content: center;
-    margin: auto;
-    margin-top: -5px;
+    margin-top: -7px;
   }
 
   .categories > div {
-    margin: 25px;
+    margin: 9px;
   }
 
   .np{
@@ -78,9 +81,13 @@
     display: flex;
     flex-wrap: wrap;
     margin-left: 20px;
+    margin-top: 16px;
     padding: 20px;
   }
 
+  .userPost > div {
+    margin: -4px;
+  }
 
   .userPic{
     background-image: url("../images/Home/daisy.png");
@@ -99,6 +106,11 @@
     margin-left: 200px;
     margin-right: 200px;
     text-align: left;
+  }
+
+  .viewPost{
+    display: flex;
+    
   }
   
   @media only screen and (max-width: 1000px) {
@@ -207,6 +219,7 @@
 }
 
 .createNew{
+  display: inline-block;
   background-color: #024155;
   background-image: url("../images//Home/plus.png");
   background-repeat: no-repeat;
@@ -218,8 +231,9 @@
   color: white;
   border-radius: 12px;
   padding-top: 10px;
-  margin:auto;
-  margin-top: 30px;
+ margin-bottom: 50px;
+  margin-top: 40px;
+ 
   
 }
   

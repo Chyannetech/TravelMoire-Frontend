@@ -10,6 +10,7 @@ function Home (){
 
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
+    const navigate = useNavigate()
 
 return (
 <div className='homePage'>
@@ -47,19 +48,8 @@ return (
     <div className='view'>View Media</div>
     <div className='location'>Piedmont Park</div><div className='reviews'>63.6k posts</div>
     </div>
-   
-     <div className='viewPost' onClick={handleShow}>View Post</div>
-     
-     <>
-    <Offcanvas show={show} onHide={handleClose} placement={'start'} className="offcanvas">
-       <Offcanvas.Body>
-         Some text as placeholder. In real life you can have the elements you
-         have chosen. Like, text, images, lists, etc.
-       </Offcanvas.Body>
-     </Offcanvas>
-    </>
-   
     </div>
+    <div className='viewPost'>View Post</div>
 {/* End of User Post */}
 
 
@@ -77,11 +67,10 @@ return (
     
     <div className='postBox2'>
     <div className='view'>View Media</div>
-    <div className='location'>Piedmont Park</div><div className='reviews'>63.6k posts</div>
+    <div className='location'>Grant Park</div><div className='reviews'>Fewer than 100 posts</div>
     </div>
-
-    <div className='viewPost' onClick={handleShow}>View Post</div>
     </div>
+    <div className='viewPost'>View Post</div>
 {/* End of User Post */}
 
 {/* User Post */}
@@ -98,11 +87,10 @@ return (
     
     <div className='postBox2'>
     <div className='view'>View Media</div>
-    <div className='location'>Piedmont Park</div><div className='reviews'>63.6k posts</div>
+    <div className='location'>Win Park</div><div className='reviews'>45.9k posts</div>
     </div>
-
-    <div className='viewPost' onClick={handleShow}>View Post</div>
     </div>
+    <div className='viewPost'>View Post</div>
 {/* End of User Post */}
 
 {/* User Post */}
@@ -119,15 +107,12 @@ return (
     
     <div className='postBox2'>
     <div className='view'>View Media</div>
-    <div className='location'>Piedmont Park</div><div className='reviews'>63.6k posts</div>
+    <div className='location'>Freedom Park</div><div className='reviews'>5000 + posts</div>
     </div>
-
-    <div className='viewPost' onClick={handleShow}>View Post </div>
     </div>
+    <div className='viewPost'>View Post </div>
 {/* End of User Post */}
-
-
-<div className='createNew'>Create New Post</div>
+<div className="createNew" onClick={()=>navigate('/create')}>Create New Post</div>
 </div>
 )}
 

@@ -5,6 +5,9 @@ import { useState } from 'react'
 
 
 const Create = () => {
+
+  const navigate = useNavigate()
+
     return (
     <div className="createform">
       <div className="title">travel | moire</div>
@@ -51,9 +54,16 @@ const Create = () => {
           ></input>
         </div>
       </form>
-
-      <div className='createNew'>Create New Post</div>
-     
+<div className="photodiv">
+      <div className="sharePic">Share a photo
+            </div>
+            <div className="travelPic"> 
+                <div className="cameraimg"> </div>
+    
+                <div className="createNew2" onClick={()=>navigate('/create')}>Create New Post</div>
+    
+      </div>
+</div>
     </div>
   );
 };
