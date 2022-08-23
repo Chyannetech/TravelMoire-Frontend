@@ -39,6 +39,7 @@
   border: #ffffff;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   width: 300px;
+  background: transparent;
 }
 
 .password {
@@ -60,6 +61,7 @@
   border: #ffffff;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   width: 300px;
+  background: transparent;
 }
 
 input::placeholder{
