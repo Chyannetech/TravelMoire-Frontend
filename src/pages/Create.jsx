@@ -17,9 +17,10 @@ const Create = () => {
       <div className="cat-caption">
         Select a Category
       </div>
-      <form>
-      <div className="createForm">
       <div className='userImg'></div>
+
+      <form>
+      
         <div className="locationForm">
           <div className="addLocation">Add Location</div>
           <input
@@ -30,7 +31,7 @@ const Create = () => {
             placeholder="Ex: Atlanta, GA"
           ></input>
           </div>
-        </div>
+        
         
 
         <div className="placeForm">

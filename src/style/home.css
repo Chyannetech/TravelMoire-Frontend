@@ -2,8 +2,8 @@ body {
   background-color: whitesmoke;
 }
 
-.offcanvas{
-  height:900px;
+.offcanvas {
+  height: 900px;
   background-color: black;
 }
 
@@ -14,108 +14,107 @@ body {
 }
 
 .searchContainer {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 15px;
-    margin-top: -50px;
-  }
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+  margin-top: -50px;
+}
 
-  .searchBox{
-    margin-top: 100px;
-    text-align: center;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    width: 275px;
-    height: 35px;
-    border-radius: 8px;
-  }
+.searchBox {
+  margin-top: 100px;
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  width: 275px;
+  height: 35px;
+  border-radius: 8px;
+}
 
-  .searchIcon{
-    background-image: url("../images/Home/search.png");
-    background-color: #024155;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 50px;
-    height: 40px;
-    border-radius: 8px;
-    margin-top: 100px;
-    margin-left: 10px;
-  }
-  
-  .trending{
-    display: flex;
-    margin-left: 50px;
-    margin-top: 30px;
-  }
+.searchIcon {
+  background-image: url("../images/Home/search.png");
+  background-color: #024155;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 50px;
+  height: 40px;
+  border-radius: 8px;
+  margin-top: 100px;
+  margin-left: 10px;
+}
 
-  .trending > div {
-    margin-left: -30px;
-  }
+.trending {
+  display: flex;
+  margin-left: 50px;
+  margin-top: 30px;
+}
 
-  .travelBuds{
-    background-image: url("../images/Home/travelbuds.png");
-    background-repeat: no-repeat;
-    width: 50px;
-    height: 40px;
-  }
+.trending > div {
+  margin-left: -30px;
+}
 
-  .popular{
-    font-weight: bolder;
-  }
+.travelBuds {
+  background-image: url("../images/Home/travelbuds.png");
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 40px;
+}
 
-  .categories{
-    display: flex;
-    justify-content: center;
-    margin-top: -7px;
-  }
+.popular {
+  font-weight: bolder;
+}
 
-  .categories > div {
-    margin: 9px;
-  }
+.categories {
+  display: flex;
+  justify-content: center;
+  margin-top: -7px;
+}
 
-  .np{
-    text-decoration: underline;
-    text-decoration-color: #024155;
-  }
+.categories > div {
+  margin: 9px;
+}
 
-  .userPost{
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: 20px;
-    margin-top: 16px;
-    padding: 20px;
-  }
+.np {
+  text-decoration: underline;
+  text-decoration-color: #024155;
+}
 
-  .userPost > div {
-    margin: -4px;
-  }
+.userPost {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 20px;
+  margin-top: 16px;
+  padding: 20px;
+}
 
-  .userPic{
-    background-image: url("../images/Home/daisy.png");
-    background-repeat: no-repeat;
-    height: 60px;
-    width: 60px;
-  }
+.userPost > div {
+  margin: -4px;
+}
 
-  .name{
-   text-align: left;
-  }
+.userPic {
+  background-image: url("../images/Home/daisy.png");
+  background-repeat: no-repeat;
+  height: 60px;
+  width: 60px;
+}
 
-  .postBox{
-    display:block;
-    justify-content: space-between;
-    margin-left: 200px;
-    margin-right: 200px;
-    text-align: left;
-  }
+.name {
+  text-align: left;
+}
 
-  .viewPost{
-    display: flex;
-    
-  }
-  
-  @media only screen and (max-width: 1000px) {
-  .postBox{
-    display:block;
+.postBox {
+  display: block;
+  justify-content: space-between;
+  margin-left: 200px;
+  margin-right: 200px;
+  text-align: left;
+}
+
+.viewPost {
+  display: flex;
+}
+
+@media only screen and (max-width: 1000px) {
+  .postBox {
+    display: block;
     margin-left: 0px;
     margin-right: 110px;
     font-size: 14px;
@@ -123,71 +122,71 @@ body {
   }
 }
 
-  .postBox2{ 
-    display:block;
-    justify-content: space-between;
-    margin-left: 200px;
-    margin-right: 200px;
+.postBox2 {
+  display: block;
+  justify-content: space-between;
+  margin-left: 200px;
+  margin-right: 200px;
+  text-align: left;
+}
+
+@media only screen and (max-width: 1000px) {
+  .postBox2 {
+    display: block;
+    margin-top: -90px;
+    font-size: 14px;
     text-align: left;
+    margin-left: 285px;
+    white-space: nowrap;
   }
+}
 
-  @media only screen and (max-width: 1000px) {
-    .postBox2{
-      display:block;
-      margin-top: -90px;
-      font-size: 14px;
-      text-align:left;
-      margin-left: 285px;
-      white-space: nowrap;
-    }
-  }
-  
-  .city{
-    background-image: url("../images/Home/location.png");
-    background-repeat: no-repeat;
-    padding-left: 20px;
-    height:30px; 
-    margin: 10px;
-  }
+.city {
+  background-image: url("../images/Home/location.png");
+  background-repeat: no-repeat;
+  padding-left: 20px;
+  height: 30px;
+  margin: 10px;
+}
 
-  .view{
-    background-image: url("../images/Home/camera.png");
-    background-repeat: no-repeat;
-    padding-left: 20px;
-    height:30px; 
-    margin: 10px;
-  }
+.view {
+  background-image: url("../images/Home/camera.png");
+  background-repeat: no-repeat;
+  padding-left: 20px;
+  height: 30px;
+  margin: 10px;
+}
 
-  .tb{
-    background-image: url("../images/Home/travelbuds.png");
-    background-repeat: no-repeat;
-    padding-left: 20px;
-    height:30px; 
-    margin: 10px;
-  }
-  .location{
-    background-image: url("../images/Home/leaf.png");
-    background-repeat: no-repeat;
-    padding-left: 20px;
-    height:30px; 
-    margin: 10px;
-  }
+.tb {
+  background-image: url("../images/Home/travelbuds.png");
+  background-repeat: no-repeat;
+  padding-left: 20px;
+  height: 30px;
+  margin: 10px;
+}
+.location {
+  background-image: url("../images/Home/leaf.png");
+  background-repeat: no-repeat;
+  padding-left: 20px;
+  height: 30px;
+  margin: 10px;
+}
 
-  .reviews{
+.reviews {
+  text-align: left;
+  margin-top: -20px;
+  color: #869aa0;
+}
+
+@media only screen and (max-width: 1000px) {
+  .reviews {
     text-align: left;
     margin-top: -20px;
-    color:#869AA0 ;
+    color: #869aa0;
   }
+}
 
-  @media only screen and (max-width: 1000px) {
-    .reviews{
-      text-align: left;
-      margin-top: -20px;
-      color:#869AA0 ;
-    }
-  }
-
-.viewPost{
+.viewPost {
   background-color: #024155;
   justify-content: center;
   width: 100px;
@@ -203,7 +202,7 @@ body {
 }
 
 @media only screen and (max-width: 1000px) {
-  .viewPost{
+  .viewPost {
     background-color: #024155;
     justify-content: center;
     width: 100px;
@@ -218,7 +217,7 @@ body {
   }
 }
 
-.createNew{
+.createNew {
   display: inline-block;
   background-color: #024155;
   background-image: url("../images//Home/plus.png");
@@ -231,9 +230,6 @@ body {
   color: white;
   border-radius: 12px;
   padding-top: 10px;
- margin-bottom: 50px;
+  margin-bottom: 50px;
   margin-top: 40px;
- 
-  
 }
-  
