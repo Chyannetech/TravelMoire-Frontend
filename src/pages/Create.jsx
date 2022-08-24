@@ -1,7 +1,32 @@
-import React from "react";
+import React, { useState } from "react";
+import axios from "axios";
+
 import "../style/create.css";
 
 const Create = () => {
+
+const [entry, setEntry] = useState({
+  category:"",
+  location:"",
+  place:""
+})
+
+const handleChange = (event) => {
+  const name = event.target.name
+  const value = event.target.value
+  setEntry ({...entry,[name]:value})
+} 
+console.log(entry)
+
+  const handleSubmit = async () => {
+ try {
+  await axios.post("http://localhost:8000/travelmoire/entries/create-entry",entry)
+  console.log("data sent to backend")
+ } catch (error) {
+  console.log("error message", error.message)
+ }
+
+  }
   return (
     <div className="createform">
       <div className="title">travel | moire</div>
@@ -22,9 +47,10 @@ const Create = () => {
           <input
             className="categoryInput"
             type="text"
-            name="text"
+            name="category"
             required
             placeholder=""
+            onChange={handleChange}
           ></input>
         </div>
         <div className="locationForm">
@@ -32,9 +58,10 @@ const Create = () => {
           <input
             className="locationInput"
             type="text"
-            name="text"
+            name="location"
             required
             placeholder=""
+            onChange={handleChange}
           ></input>
         </div>
 
@@ -43,9 +70,10 @@ const Create = () => {
           <input
             className="placeInput"
             type="text"
-            name="text"
+            name="place"
             required
             placeholder=""
+            onChange={handleChange}
           ></input>
         </div>
         <div className="buddyForm">
@@ -64,7 +92,7 @@ const Create = () => {
         <div className="travelPic">
           <div className="cameraimg"> </div>
 
-          <div className="createNew2">Create New Post</div>
+          <div className="createNew2"onClick={()=>handleSubmit()}>Create New Post</div>
         </div>
       </div>
     </div>
