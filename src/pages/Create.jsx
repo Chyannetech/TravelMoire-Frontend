@@ -30,17 +30,15 @@ console.log(entry)
   return (
     <div className="createform">
       <div className="title">travel | moire</div>
-      <div className="caption">Popular nearby / Create new post</div>
+  
       <div></div>
-      <div className="cat-caption">Select a Category</div>
+      <div className="selectCategory">Select a Category</div>
       <div className="categories2">
         <ul>Art</ul>
         <ul>National Parks</ul>
         <ul>Beaches</ul>
         <ul>Restaurants</ul>
       </div>
-      <div className="userImg"></div>
-
       <form>
         <div className="categoryForm">
           <div className="addCategory">Add Category</div>
