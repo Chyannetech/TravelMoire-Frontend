@@ -39,7 +39,7 @@ function Home() {
         <div className="cafe">Cafes</div>
       </div>
       {/* map through data */}
-      <div>{users.map(newUser)}</div>
+      <div className="map">{users.map(newUser)}</div>
       <div className="createNew" onClick={() => navigate("/create")}>
         Create New Post
       </div>
