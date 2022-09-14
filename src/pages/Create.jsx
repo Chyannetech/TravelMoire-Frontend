@@ -76,16 +76,7 @@ console.log(entry)
             onChange={handleChange}
           ></input>
         </div>
-        <div className="buddyForm">
-          <div className="addBuddies">Travel Buddies</div>
-          <input
-            className="buddyInput"
-            type="text"
-            name="text"
-            required
-            placeholder=""
-          ></input>
-        </div>
+      
       </form>
       <div className="photodiv">
         <div className="sharePic">Share a photo</div>
