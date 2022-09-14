@@ -2,11 +2,6 @@ body {
   background-color: whitesmoke;
 }
 
-.offcanvas {
-  height: 900px;
-  background-color: black;
-}
-
 .titleHome {
   font-size: 50px;
   margin-top: 40px;
@@ -121,7 +116,6 @@ body {
     display: block;
     margin-left: 0px;
     margin-right: 110px;
- 
     font-size: 14px;
     text-align: left;
   }
@@ -194,7 +188,7 @@ body {
 .viewPost {
   background-color: #024155;
   justify-content: center;
-  width: 100px;
+  width: 170px;
   height: 18px;
   font-size: medium;
   font-weight: 500;
@@ -211,7 +205,7 @@ body {
   .viewPost {
     background-color: #024155;
     justify-content: center;
-    width: 100px;
+    width: 170px;
     height: 18px;
     font-size: medium;
     font-weight: 500;
@@ -237,7 +231,7 @@ body {
   color: white;
   border-radius: 12px;
   padding-top: 10px;
-  margin-top: 90px;
+  margin-top: 50px;
 }
 
 .map{

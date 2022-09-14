@@ -1,7 +1,6 @@
 const users = [
     {
         id: 1,
-        img: "https://cdn.britannica.com/51/188751-050-D4E1CFBC/Beyonce-2010.jpg",
         name: "Diasy",
         city: "Atlanta, GA",
         location: "Piedmont Park",
@@ -9,7 +8,6 @@ const users = [
     },
     {
         id: 2,
-        img: "https://cdn.britannica.com/51/188751-050-D4E1CFBC/Beyonce-2010.jpg",
         name: "Chika",
         city: "Atlanta, GA",
         location: "Grant Park",
@@ -17,7 +15,6 @@ const users = [
     },
     {
         id: 3,
-        img: "https://cdn.britannica.com/51/188751-050-D4E1CFBC/Beyonce-2010.jpg",
         name: "Kenny",
         city: "Atlanta, GA",
         location: "Win Park",
@@ -25,7 +22,6 @@ const users = [
     },
     {
         id: 4,
-        img: "https://cdn.britannica.com/51/188751-050-D4E1CFBC/Beyonce-2010.jpg",
         name: "Steve",
         city: "Atlanta, GA",
         location: "Freedom Park",
