@@ -3,7 +3,8 @@ import "./style/app.css";
 import Login from "./pages/Login";
 import Home from "./pages/Home";
 import Create from "./pages/Create";
-import Show from "./pages/Show"
+import Show from "./pages/Show";
+
 
 
 function App() {
@@ -20,8 +21,9 @@ function App() {
           <Route path="/create" exact element={<Create />}></Route>
         </Routes>
         <Routes>
-          <Route path="/show" exact element={<Show />}></Route>
+          <Route path="/show" exact element={<Show/>}></Route>
         </Routes>
+        
       </BrowserRouter>
     </div>
   );
