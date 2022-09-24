@@ -1,6 +1,7 @@
 export default function EntryList(props) {
   const displayEntries = (props) => {
     const {entries} = props;
+    console.log(entries)
 
     if (entries.length > 0) {
       return entries.map((entry, index) => {
