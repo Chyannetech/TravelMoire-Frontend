@@ -1,30 +1,30 @@
 import React, { useEffect, useState } from "react";
+import EntryList from "../components/EntryList";
 import axios from "axios";
 
 function Show() {
+  useEffect(() => {
+    getAllEntries();
+  }, []);
 
-    useEffect(() => {
-        getEntries();
-    }, [])
+  const [entries, setEntries] = useState([]);
 
-    const [entries, setEntries]= useState([])
-    const [loading, setLoading]= useState(false)
-
-    const getEntries = async () => {
-        try{
-            const res = await axios.get("http://localhost:8000/travelmoire/entries/get-entry")
-            setEntries(res.data);
-            setLoading(true);
-        } catch (err) {
-            alert(err.message);
-        }
+  const getAllEntries = async () => {
+    try {
+      const respond = await axios.get(
+        "http://localhost:8000/travelmoire/entries/get-entry"
+      );
+      setEntries(respond.data);
+    } catch (err) {
+      alert(err.message);
     }
+  };
 
-    return (
-   <div>
-    
-   </div>
-    )
+  return (
+    <div>
+      <EntryList entries={entries} />
+    </div>
+  );
 }
 
 export default Show;

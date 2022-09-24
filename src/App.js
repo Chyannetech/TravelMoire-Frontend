@@ -21,7 +21,7 @@ function App() {
           <Route path="/create" exact element={<Create />}></Route>
         </Routes>
         <Routes>
-          <Route path="/show" exact element={<Show/>}></Route>
+          <Route path="/show" exact element={<Show />}></Route>
         </Routes>
         
       </BrowserRouter>
