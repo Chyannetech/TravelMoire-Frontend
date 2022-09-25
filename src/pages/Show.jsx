@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import EntryList from "../components/EntryList";
 import axios from "axios";
+import "../style/show.css"
 
 function Show() {
 
@@ -31,7 +32,7 @@ function Show() {
     // pass data to child component (EntryList) as a prop(entries) to be displayed
   return (
     <div>
-      <div className="title">travel | moire</div>
+    <div className="titleShow">travel | moire</div>
       <EntryList entries={entries} />
     </div>
   );

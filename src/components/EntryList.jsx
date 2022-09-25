@@ -1,4 +1,5 @@
 import React from "react";
+import "../style/entryList.css";
 
 function EntryList(props) {
   const displayEntries = (props) => {
@@ -10,10 +11,13 @@ function EntryList(props) {
         return (
           <div>
             <div key={entry._id}>
-              <h3>{entry.location}</h3>
-              <h3>{entry.category}</h3>
-              <h3>{entry.place}</h3>
-              
+            <div className="city2"></div>
+              <div className="listLocation">{entry.location}</div>
+              <div className="listPlace">{entry.place}</div>
+              <div className="editButton"></div>
+              <div className="deleteButton"></div>
+              <div className="listCategory">{entry.category}</div>
+             
             </div>
           </div>
         );
