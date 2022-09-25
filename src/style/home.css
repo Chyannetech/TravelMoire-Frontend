@@ -239,10 +239,6 @@ body {
   display: block;
   margin: auto;
   background-color: #024155;
-  background-image: url("../images//Home/plus.png");
-  background-repeat: no-repeat;
-  background-position-x: 20px;
-  background-position-y: 10px;
   width: 235px;
   height: 27px;
   font-weight: 500;
