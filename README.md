@@ -1,6 +1,6 @@
 # Travel Moire VZ. 2
 
-#### TravelMoire is a full stack web appliction that was created to encourage traveling, especially the exploration of hidden adventures around the world. 
+#### TravelMoire is a Full Stack React CRUD web appliction that was created to encourage traveling, especially the exploration of hidden adventures around the world. 
 <img width="640" alt="HomePage" src="">
 
 ## Technologies Used
@@ -14,9 +14,10 @@
 * Node
 
 ## MVP
-* Design a social media inspired UI using React
-* Implement a backend server using Node.js
-* Utilize MongoDB and Mongoose to store data 
+* Create React app using re-usable Components
+* Create a REST API using Express.js
+* Create a React form that consumes the rest API data
+* Make HTTP request with React Axios library for CRUD functionality 
 * Deploy online 
 
 ## Hooks
