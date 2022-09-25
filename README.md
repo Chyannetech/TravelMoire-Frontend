@@ -1,7 +1,6 @@
 # Travel Moire VZ. 2
 
 #### TravelMoire is a Full Stack React CRUD web appliction that was created to encourage traveling, especially the exploration of hidden adventures around the world. 
-<img width="640" alt="HomePage" src="">
 
 ## Technologies Used
 * JavaScript 
@@ -20,7 +19,7 @@
 * Make HTTP request with React Axios library for CRUD functionality 
 * Deploy online 
 
-## Hooks
+## Hook
 ```
 const [entry, setEntry] = useState({
   category:"",
@@ -51,10 +50,10 @@ const {entries} = props;
           </div>
         );
       });
-    ```     
+ ```       
 
-## Sketche
-<img width="804" alt="TravelMoireWF" src="https://user-images.githubusercontent.com/103911002/186611637-4b97b32e-fb72-4a16-9cbf-64970f42fe25.png">
+## Prototype
+
 
  ## Post MVP
 * Add upload photo option 
