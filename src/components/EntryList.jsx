@@ -1,8 +1,9 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import {  Link } from "react-router-dom";
 import "../style/entryList.css";
 
 function EntryList(props) {
+  
   const displayEntries = (props) => {
 
 

@@ -1,14 +1,17 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState} from "react";
+import { Link } from "react-router-dom"
 import EntryList from "../components/EntryList";
 import axios from "axios";
 import "../style/show.css"
 
 function Show() {
 
+
     // use the useEffect hook to send GET request 
   useEffect(() => {
     getAllEntries();
   }, []); // []---> argument to prevent infinite loop. (only runs on render).
+
 
     // initializes state to store incomming data 
   const [entries, setEntries] = useState([]);
@@ -31,10 +34,15 @@ function Show() {
       alert(err.message);
     }
   };
+ 
+    
     // passes data to child component (EntryList) as a prop(entries) 
   return (
+    
     <div>
+    <Link style={{textDecoration: 'none'}} to="/Home">
     <div className="titleShow">travel | moire</div>
+    </Link>
       <EntryList entries={entries} />
     </div>
   );

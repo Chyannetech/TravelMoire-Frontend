@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom"
 import axios from "axios";
 import "../style/create.css";
 
@@ -30,7 +31,9 @@ console.log(entry)
 
   return (
     <div className="createform">
+     <Link style={{textDecoration: 'none'}} to="/Home">
       <div className="title">travel | moire</div>
+      </Link>
   
       <div></div>
       <div className="selectCategory">Select a Category</div>
