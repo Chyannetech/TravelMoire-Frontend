@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import "../style/create.css";
 
+
 const Create = () => {
 
 const [entry, setEntry] = useState({
@@ -24,8 +25,9 @@ console.log(entry)
  } catch (error) {
   console.log("error message", error.message)
  }
-
   }
+
+
   return (
     <div className="createform">
       <div className="title">travel | moire</div>
@@ -79,8 +81,7 @@ console.log(entry)
         <div className="sharePic">Share a photo</div>
         <div className="travelPic">
           <div className="cameraimg"> </div>
-
-          <div className="createNew2"onClick={()=>handleSubmit()}>Create New Post</div>
+          <div className="createNew2"onClick={()=>handleSubmit()} >Create New Post</div>
         </div>
       </div>
     </div>

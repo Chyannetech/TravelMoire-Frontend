@@ -5,18 +5,20 @@ import "../style/show.css"
 
 function Show() {
 
-    // useEffect calls getAllEntries() when this show.jsx component mounts
+    // use the useEffect hook to send GET request 
   useEffect(() => {
     getAllEntries();
-  }, []); // []---> argument to prevent infinite loop. (Only runs on render).
+  }, []); // []---> argument to prevent infinite loop. (only runs on render).
 
-    // initializes state
+    // initializes state to store incomming data 
   const [entries, setEntries] = useState([]);
 
-    // creates a function to store our axios request
+    // creates a function to store our axios request in useEffect()
   const getAllEntries = async () => {
 
     // handles the promise by fulfilling and catching errors
+    // uses axios.get to send the GET request to the API
+    // if request is fulfilled, sets the response data in state
     try {
       const respond = await axios.get(
         "http://localhost:8000/travelmoire/entries/get-entry"
@@ -29,7 +31,7 @@ function Show() {
       alert(err.message);
     }
   };
-    // pass data to child component (EntryList) as a prop(entries) to be displayed
+    // passes data to child component (EntryList) as a prop(entries) 
   return (
     <div>
     <div className="titleShow">travel | moire</div>

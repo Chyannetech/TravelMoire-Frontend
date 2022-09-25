@@ -10,9 +10,15 @@
     background-repeat: no-repeat;
     background-position: center;
     background-position-y: 70px;
-    background-position-x: 710px;
-   
+    background-position-x: 575px;
 }
+
+    @media only screen and (max-width: 1000px) {
+        .listLocation {
+            background-image: none;
+        }
+    }
+
 .listPlace {
     text-transform: capitalize;
     font-size: 30px;
@@ -23,12 +29,23 @@
     font-size: 0.875em;
 }
 
-/* .city2 {
-    display: flex;
-    justify-content: center;
-    background-image: url("../images/Home/location.png");
+.update {
+    background-image: url("../images/Show/update.png");
     background-repeat: no-repeat;
-    background-position: center;
-    height: 30px;
-    margin: 10px;   
-  } */
+    border: none;
+    height: 18px;
+    width: 15px;
+   margin-top: 10px;
+    
+    
+    
+}
+.delete {
+    background-image: url("../images/Show/delete.png");
+    background-repeat: no-repeat;
+    border: none;
+    height: 18px;
+    width: 15px;
+    margin-top: 10px;  
+}
+

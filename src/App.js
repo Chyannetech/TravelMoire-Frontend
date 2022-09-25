@@ -7,6 +7,7 @@ import Show from "./pages/Show";
 
 
 
+
 function App() {
   return (
     <div className="App">
@@ -23,7 +24,6 @@ function App() {
         <Routes>
           <Route path="/show" exact element={<Show />}></Route>
         </Routes>
-        
       </BrowserRouter>
     </div>
   );
