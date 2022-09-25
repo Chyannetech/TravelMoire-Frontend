@@ -1,71 +1,75 @@
-# Getting Started with Create React App
+# Travel Moire VZ. 2
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#### TravelMoire is a full stack web appliction that was created to encourage traveling, especially the exploration of hidden adventures around the world. 
+<img width="640" alt="HomePage" src="">
 
-## Available Scripts
+## Technologies Used
+* JavaScript 
+* React
+* HTML5
+* CSS3
+* MongoDB
+* Postman
+* Express.js
+* Node
 
-In the project directory, you can run:
+## MVP
+* Design a social media inspired UI using React
+* Implement a backend server using Node.js
+* Utilize MongoDB and Mongoose to store data 
+* Deploy online 
 
-### `npm start`
+## Hooks
+```
+const [entry, setEntry] = useState({
+  category:"",
+  location:"",
+  place:""
+})
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+const handleChange = (event) => {
+  const name = event.target.name
+  const value = event.target.value
+  setEntry ({...entry,[name]:value})
+} 
+ ```   
+## Main Prop
+```
+const {entries} = props;
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+    if (entries.length > 0) {
+      return entries.map((entry) => { 
+        return (
+          <div>
+            <div className="city"></div>
+              <div className="listLocation">{entry.location}</div>
+              <div className="listPlace">{entry.place}</div>
+              <div className="listCategory">{entry.category}</div>
+              <button className="delete"></button>
+            </div>
+          </div>
+        );
+      });
+    ```     
 
-### `npm test`
+## Sketche
+<img width="804" alt="TravelMoireWF" src="https://user-images.githubusercontent.com/103911002/186611637-4b97b32e-fb72-4a16-9cbf-64970f42fe25.png">
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+ ## Post MVP
+* Add upload photo option 
+* Add business details to each place on Home Page
+* Connect User Authentication to Login Form 
 
-### `npm run build`
+## Deployment [Project URL] 
+#### View the deployed app [here.](https://travelmoire2.herokuapp.com/)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## SWOT Analysis
+### Strengths:
+I really enjoyd styling the components in React. I got everything set up fairly quickly to mimic the wireframe. Also, the database and routes for CRUD functionality was pretty simple to set up this time around. 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Weaknesses:
+Properly executing methods in functional and class components in React is still an opportunity area.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# TravelMoire-Frontend
+### Opportunities:
+To reinforce all of the concepts learned during this project and to familiarize myself further with using forms and other hooks to continue developing my ideas.
