@@ -6,12 +6,16 @@ import "../style/create.css";
 
 const Create = () => {
 
+ // initializes state to store incomming data
 const [entry, setEntry] = useState({
   category:"",
   location:"",
   place:""
 })
 
+// handles form input value
+// update state with latest inputted value 
+//  updates component with setState()
 const handleChange = (event) => {
   const name = event.target.name
   const value = event.target.value
@@ -19,6 +23,7 @@ const handleChange = (event) => {
 } 
 console.log(entry)
 
+//  pulls api data from post route using asynchronous HTTP request to REST endpoint
   const handleSubmit = async () => {
  try {
   await axios.post("http://localhost:8000/travelmoire/entries/create-entry",entry)
