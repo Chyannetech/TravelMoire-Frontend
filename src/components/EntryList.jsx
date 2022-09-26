@@ -1,5 +1,4 @@
 import React from "react";
-import {  Link } from "react-router-dom";
 import "../style/entryList.css";
 
 function EntryList(props) {
@@ -28,6 +27,6 @@ function EntryList(props) {
       return <h3>No entries yet</h3>;
     }
   };
-  return <div>{displayEntries(props)}</div>;
+  return <div className="showPage">{displayEntries(props)}</div>;
 }
 export default EntryList;

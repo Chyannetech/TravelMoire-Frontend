@@ -43,7 +43,7 @@ function Show() {
     <Link style={{textDecoration: 'none'}} to="/Home">
     <div className="titleShow">travel | moire</div>
     </Link>
-      <EntryList entries={entries} />
+    <EntryList entries={entries} />
     </div>
   );
 }

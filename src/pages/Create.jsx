@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
 import axios from "axios";
 import "../style/create.css";
 
@@ -34,9 +34,7 @@ console.log(entry)
      <Link style={{textDecoration: 'none'}} to="/Home">
       <div className="title">travel | moire</div>
       </Link>
-  
       <div></div>
-      <div className="selectCategory">Select a Category</div>
       <div className="categories2">
         <ul>Art</ul>
         <ul>National Parks</ul>
@@ -85,6 +83,9 @@ console.log(entry)
         <div className="travelPic">
           <div className="cameraimg"> </div>
           <div className="createNew2"onClick={()=>handleSubmit()} >Create New Post</div>
+          <Link style={{textDecoration: 'none'}} to="/Show">
+      <div className="viewMore">View All</div>
+      </Link>
         </div>
       </div>
     </div>
