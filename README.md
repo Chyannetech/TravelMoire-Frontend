@@ -1,6 +1,7 @@
 # Travel Moire VZ. 2
 
 #### TravelMoire is a Full Stack React CRUD web appliction that was created to encourage traveling and discovering new adventures around the world.
+![Form](https://user-images.githubusercontent.com/103911002/192179732-4efe3664-3a95-4fcb-b52b-39885a9af1d4.png)
 
 ## Technologies Used
 * JavaScript 
@@ -53,6 +54,8 @@ const {entries} = props;
  ```       
 
 ## Prototype
+![TravelMoire2](https://user-images.githubusercontent.com/103911002/192179600-3e85eb35-3f9e-4e84-8caa-40e84f2429d7.png)
+
 
 
  ## Post MVP
@@ -62,7 +65,6 @@ const {entries} = props;
 
 ## Deployment [Project URL] 
 #### View the deployed app [here.](https://travelmoire2.herokuapp.com/)
-
 
 ## SWOT Analysis
 ### Strengths:
