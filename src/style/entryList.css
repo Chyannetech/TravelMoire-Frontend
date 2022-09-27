@@ -47,7 +47,13 @@
     height: 18px;
     width: 15px;
     margin-top: 10px;  
+    cursor: pointer;
+    transition: 0.2s all;
 }
+
+.delete:active {
+    transform: scale(0.98);
+  }
 
 .showPage {
     padding-bottom: 20px;

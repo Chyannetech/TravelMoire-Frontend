@@ -43,6 +43,9 @@ console.log(respond.data);
     <div className="titleShow">travel | moire</div>
     </Link>
     <EntryList entries={entries} />
+    <Link style={{textDecoration: 'none'}} to="/Create">
+    <div className="newPostButton">Create Another Post</div>
+    </Link>
     </div>
   );
 }

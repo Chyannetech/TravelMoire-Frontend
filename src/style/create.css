@@ -1,4 +1,3 @@
-
 .caption {
   text-align: left;
   font-size: 16px;
@@ -8,43 +7,41 @@
   margin-bottom: 50px;
 }
 
-
 .categories2 {
   display: flex;
   justify-content: center;
   margin-top: -7px;
   margin-right: 45px;
   padding-top: 50px;
-  
 }
 
 .addCategory {
   font-weight: 800;
   font-size: 15px;
-  white-space: nowrap; 
-  }
-  
-  .categoryForm {
-    display: flex;
-    justify-content: center;
-    padding-top: 40px;
-    margin-bottom: 15px;
-    margin-left: 10px;
-    text-align: justify;
-  }
-  
-  .categoryInput {
-    margin-left: 10px;
-    border: #ffffff;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-    width: 250px;
-    background: transparent;
-  }
-  
+  white-space: nowrap;
+}
+
+.categoryForm {
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+  margin-bottom: 15px;
+  margin-left: 10px;
+  text-align: justify;
+}
+
+.categoryInput {
+  margin-left: 10px;
+  border: #ffffff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  width: 250px;
+  background: transparent;
+}
+
 .addLocation {
-font-weight: 800;
-font-size: 15px;
-white-space: nowrap; 
+  font-weight: 800;
+  font-size: 15px;
+  white-space: nowrap;
 }
 
 .locationForm {
@@ -63,11 +60,10 @@ white-space: nowrap;
   background: transparent;
 }
 
-
 .addPlace {
   font-weight: 800;
-font-size: 15px;
-white-space: nowrap; 
+  font-size: 15px;
+  white-space: nowrap;
 }
 
 .placeForm {
@@ -88,7 +84,7 @@ white-space: nowrap;
 .addImage {
   font-weight: 800;
   font-size: 15px;
-  white-space: nowrap; 
+  white-space: nowrap;
 }
 
 .imageInput {
@@ -159,7 +155,7 @@ white-space: nowrap;
   margin-top: 150px;
   margin-bottom: 50px;
   cursor: pointer;
-  transition: 0.2s all
+  transition: 0.2s all;
 }
 
 .createNew2:active {
@@ -181,7 +177,7 @@ white-space: nowrap;
   padding-top: 10px;
   margin-bottom: 50px;
   cursor: pointer;
-  transition: 0.2s all
+  transition: 0.2s all;
 }
 
 .viewAll:active {

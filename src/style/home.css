@@ -1,12 +1,10 @@
 body {
   background-color: whitesmoke;
-  
 }
 
 @media only screen and (max-width: 1000px) {
   .body {
-  height: 100vh;
-  
+    height: 100vh;
   }
 }
 
@@ -62,7 +60,6 @@ body {
   height: 40px;
 }
 
-
 .popular {
   font-weight: bolder;
 }
@@ -98,7 +95,7 @@ body {
   border-radius: 50%;
   height: 100px;
   width: 100px;
-  object-fit: cover; 
+  object-fit: cover;
 }
 
 .name {
@@ -116,7 +113,6 @@ body {
 
 .viewPost {
   display: flex;
-  
 }
 
 @media only screen and (max-width: 1000px) {
@@ -206,7 +202,6 @@ body {
   border-radius: 12px;
   padding-top: 10px;
   padding-bottom: 10px;
-
 }
 
 @media only screen and (max-width: 1000px) {
@@ -241,6 +236,12 @@ body {
   border-radius: 12px;
   padding-top: 10px;
   margin-top: 50px;
+  cursor: pointer;
+  transition: 0.2s all;
+}
+
+.createNewButton:active {
+  transform: scale(0.98);
 }
 
 .viewPostButton {
@@ -254,9 +255,14 @@ body {
   border-radius: 12px;
   padding-top: 10px;
   margin-top: 20px;
+  cursor: pointer;
+  transition: 0.2s all;
+}
+.newPostButton:active {
+  transform: scale(0.98);
 }
 
-.map{
+.map {
   display: flex;
   justify-content: space-between;
   padding: 50px;
@@ -265,8 +271,7 @@ body {
 @media only screen and (max-width: 1000px) {
   .map {
     display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 90px;
-  
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 90px;
   }
 }
