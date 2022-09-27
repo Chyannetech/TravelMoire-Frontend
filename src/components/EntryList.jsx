@@ -5,6 +5,7 @@ import { useNavigate } from "react-router";
 
 function EntryList(props) {
   const navigate = useNavigate()
+  // deletes entries dynamically
   const deleteEntries = async (id)  => {
     try {
       await axios.delete(
@@ -16,7 +17,6 @@ function EntryList(props) {
       }
   }
   const displayEntries = (props) => {
-
 
     const {entries} = props;
     // this conditional statement delays mapping to make sure data has been updated in state before rendering
@@ -30,7 +30,7 @@ function EntryList(props) {
               <div className="listLocation">{entry.location}</div>
               <div className="listPlace">{entry.place}</div>
               <div className="listCategory">{entry.category}</div>
-              <img className="userPic" src={entry.image}></img>
+              <img className="userPic2" src={entry.image}></img>
               <button onClick={()=> deleteEntries(entry._id)} className="delete"></button>
             </div>
           </div>

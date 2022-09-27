@@ -20,12 +20,13 @@
 * Make HTTP request with React Axios library for CRUD functionality 
 * Deploy online 
 
-## Hook
+## Hooks
 ```
 const [entry, setEntry] = useState({
   category:"",
   location:"",
-  place:""
+  place:"",
+  image:""
 })
 
 const handleChange = (event) => {
@@ -33,8 +34,28 @@ const handleChange = (event) => {
   const value = event.target.value
   setEntry ({...entry,[name]:value})
 } 
- ```   
-## Main Prop
+
+```
+```
+const navigate = useNavigate()
+  
+  const handleSubmit = async () => {
+ try {
+  await axios.post("http://localhost:8000/travelmoire/entries/create-entry",entry)
+  navigate("/show")
+ } catch (error) {
+  console.log("error message", error.message)
+ }
+  }
+ ``` 
+
+``` 
+useEffect(() => {
+    getAllEntries();
+
+```
+
+## Home Page Component 
 ```
 const {entries} = props;
 
@@ -57,10 +78,9 @@ const {entries} = props;
 ![TravelMoire2](https://user-images.githubusercontent.com/103911002/192179600-3e85eb35-3f9e-4e84-8caa-40e84f2429d7.png)
 
 
-
  ## Post MVP
-* Add upload photo option 
-* Add business details to each place on Home Page
+* Add business details to each place on Home Page (CSS)
+* Add scrollable feauture to category menu
 * Connect User Authentication to Login Form 
 
 ## Deployment [Project URL] 
@@ -68,10 +88,10 @@ const {entries} = props;
 
 ## SWOT Analysis
 ### Strengths:
-I really enjoyd styling the components in React. I got everything set up fairly quickly to mimic the wireframe. Also, the database and routes for CRUD functionality was pretty simple to set up this time around. 
+I really enjoyd styling the components in React. I was able to set my main structure up fairly quickly to mimic the wireframe. Also, the database and routes for CRUD functionality was pretty simple to set up this time around on the backend. 
 
 ### Weaknesses:
 Properly executing methods in functional and class components in React is still an opportunity area.
 
 ### Opportunities:
-To reinforce all of the concepts learned during this project and to familiarize myself further with using forms and other hooks to continue developing my ideas.
+To reinforce all of the concepts learned during this project and to familiarize myself further with using forms and other hooks to continue developing my ideas. Also, continue developing CSS to mimic wireframe in certain areas.

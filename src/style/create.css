@@ -85,10 +85,25 @@ white-space: nowrap;
   background: transparent;
 }
 
-.addBuddies {
+.addImage {
   font-weight: 800;
   font-size: 15px;
   white-space: nowrap; 
+}
+
+.imageInput {
+  margin-left: 10px;
+  border: #ffffff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  width: 250px;
+  background: transparent;
+}
+
+.imageForm {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+  margin-left: 10px;
 }
 
 .photodiv {
@@ -151,9 +166,24 @@ white-space: nowrap;
   transform: scale(0.98);
 }
 
-.viewMore {
-  margin-top: -20px;
-  text-decoration: none;
-  color: inherit;
-  
+.viewAll {
+  display: inline-block;
+  background-color: #024155;
+  background-image: url("../images//Home/plus.png");
+  background-repeat: no-repeat;
+  background-position-x: 20px;
+  background-position-y: 10px;
+  width: 235px;
+  height: 27px;
+  font-weight: 500;
+  color: white;
+  border-radius: 12px;
+  padding-top: 10px;
+  margin-bottom: 50px;
+  cursor: pointer;
+  transition: 0.2s all
+}
+
+.viewAll:active {
+  transform: scale(0.98);
 }

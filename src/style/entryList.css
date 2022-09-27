@@ -3,7 +3,7 @@
     justify-content: center;
     text-transform: capitalize;
     font-weight: 600;
-    font-size: 40px;
+    font-size: 35px;
     margin-top: 40px;
     padding-top: 50px;
     background-image: url("../images/Home/location.png");
@@ -21,7 +21,8 @@
 
 .listPlace {
     text-transform: capitalize;
-    font-size: 30px;
+    font-size: 20px;
+    color: rgb(110, 109, 109);
    
 }
 .listCategory {
@@ -36,8 +37,7 @@
     height: 18px;
     width: 15px;
    margin-top: 10px;
-    
-    
+      
     
 }
 .delete {
@@ -53,3 +53,12 @@
     padding-bottom: 20px;
 }
 
+.userPic2 {
+    border-radius: 50%;
+    background-color:#fff;
+    border:2px solid rgb(0, 0, 0);
+    height: 250px;
+    width: 250px;
+    object-fit: cover; 
+    margin-top: 20px;
+  }

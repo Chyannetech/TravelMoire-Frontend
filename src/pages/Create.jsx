@@ -36,7 +36,6 @@ console.log(entry)
  }
   }
 
-
   return (
     <div className="createform">
      <Link style={{textDecoration: 'none'}} to="/Home">
@@ -84,15 +83,16 @@ console.log(entry)
             onChange={handleChange}
           ></input>
         </div>
-        <label>Add your image URL</label>
-        <input
+        <div className="imageForm">
+        <div className="addImage">Add Image URL</div>
+        <input className="imageInput"
         type="text"
             name="image"
             required
             placeholder=""
             onChange={handleChange}>
         </input>
-      
+        </div>
       </form>
       <div className="photodiv">
         <div className="sharePic">Share a photo</div>
@@ -100,7 +100,7 @@ console.log(entry)
           <div className="cameraimg"> </div>
           <div className="createNew2"onClick={()=>handleSubmit()} >Create New Post</div>
           <Link style={{textDecoration: 'none'}} to="/Show">
-      <div className="viewMore">View All</div>
+      <div className="viewAll">View All</div>
       </Link>
         </div>
       </div>

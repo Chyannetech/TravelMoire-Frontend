@@ -6,7 +6,6 @@ import "../style/show.css"
 
 function Show() {
 
-
     // uses the useEffect hook to fetch GETdata 
   useEffect(() => {
     getAllEntries();
