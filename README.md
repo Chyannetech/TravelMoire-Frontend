@@ -1,7 +1,12 @@
 # Travel Moire VZ. 2
 
 #### TravelMoire is a Full Stack React CRUD web appliction that was created to encourage traveling and discovering new adventures around the world.
-![Form](https://user-images.githubusercontent.com/103911002/192179732-4efe3664-3a95-4fcb-b52b-39885a9af1d4.png)
+
+<img width="1411" alt="Screen Shot 2022-09-27 at 1 17 37 AM" src="https://user-images.githubusercontent.com/103911002/192438329-84c4e21b-6106-4fde-8bcc-f098cf1a8e8f.png">
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/103911002/192438662-f056a090-7c8d-47b8-a3ec-cdd38458b776.png">
+</p>
 
 ## Technologies Used
 * JavaScript 
@@ -75,12 +80,12 @@ const {entries} = props;
  ```       
 
 ## Prototype
-![TravelMoire2](https://user-images.githubusercontent.com/103911002/192179600-3e85eb35-3f9e-4e84-8caa-40e84f2429d7.png)
-
+![Prototype TravelMoire](https://user-images.githubusercontent.com/103911002/192440656-6ac8e1ed-09b3-41b5-a329-7ce2d2c6e0cf.png)
 
  ## Post MVP
 * Add business details to each place on Home Page (CSS)
 * Add scrollable feauture to category menu
+* Add Footer Component
 * Connect User Authentication to Login Form 
 
 ## Deployment [Project URL] 
