@@ -4,10 +4,6 @@
 
 <img width="1411" alt="Screen Shot 2022-09-27 at 1 17 37 AM" src="https://user-images.githubusercontent.com/103911002/192438329-84c4e21b-6106-4fde-8bcc-f098cf1a8e8f.png">
 
-<p align="center">
-<img src="https://user-images.githubusercontent.com/103911002/192438662-f056a090-7c8d-47b8-a3ec-cdd38458b776.png">
-</p>
-
 ## Technologies Used
 * JavaScript 
 * React
