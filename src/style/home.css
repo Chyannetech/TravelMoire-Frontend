@@ -252,5 +252,13 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 50px;
+}
 
+@media only screen and (max-width: 1000px) {
+  .map {
+    display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 90px;
+  
+  }
 }
