@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import "../style/create.css";
 
@@ -10,8 +10,11 @@ const Create = () => {
 const [entry, setEntry] = useState({
   category:"",
   location:"",
-  place:""
+  place:"",
+  image:""
 })
+
+const navigate = useNavigate()
 
 // handles form input value
 // update state with latest inputted value 
@@ -27,7 +30,7 @@ console.log(entry)
   const handleSubmit = async () => {
  try {
   await axios.post("http://localhost:8000/travelmoire/entries/create-entry",entry)
-  console.log("data sent to backend")
+  navigate("/show")
  } catch (error) {
   console.log("error message", error.message)
  }
@@ -81,6 +84,14 @@ console.log(entry)
             onChange={handleChange}
           ></input>
         </div>
+        <label>Add your image URL</label>
+        <input
+        type="text"
+            name="image"
+            required
+            placeholder=""
+            onChange={handleChange}>
+        </input>
       
       </form>
       <div className="photodiv">

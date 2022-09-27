@@ -87,10 +87,9 @@ body {
 }
 
 .userPic {
-  background-image: url("../images/Home/daisy.png");
-  background-repeat: no-repeat;
-  height: 60px;
-  width: 60px;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
 }
 
 .name {

@@ -14,6 +14,7 @@ function newUser(newbie) {
       city={newbie.city}
       location={newbie.location}
       reviews={newbie.reviews}
+      image={newbie.image}
     />
   );
 }

@@ -1,8 +1,20 @@
 import React from "react";
+import axios from "axios";
 import "../style/entryList.css";
+import { useNavigate } from "react-router";
 
 function EntryList(props) {
-  
+  const navigate = useNavigate()
+  const deleteEntries = async (id)  => {
+    try {
+      await axios.delete(
+        `http://localhost:8000/travelmoire/entries/delete/${id}`
+      );
+      navigate("/show")
+      } catch (error) {
+        console.log("Alreay deleted")
+      }
+  }
   const displayEntries = (props) => {
 
 
@@ -12,13 +24,14 @@ function EntryList(props) {
     if (entries.length > 0) {
       return entries.map((entry) => { //iterates over the array to display data
         return (
-          <div>
-            <div key={entry._id}>
+          <div key={entry._id}>
+            <div>
             <div className="city2"></div>
               <div className="listLocation">{entry.location}</div>
               <div className="listPlace">{entry.place}</div>
               <div className="listCategory">{entry.category}</div>
-              <button className="delete"></button>
+              <img className="userPic" src={entry.image}></img>
+              <button onClick={()=> deleteEntries(entry._id)} className="delete"></button>
             </div>
           </div>
         );

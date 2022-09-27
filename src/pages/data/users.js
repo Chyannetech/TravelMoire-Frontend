@@ -4,7 +4,8 @@ const users = [
         name: "Diasy",
         city: "Atlanta, GA",
         location: "Piedmont Park",
-        reviews: "Fewer than 100 posts"
+        reviews: "Fewer than 100 posts",
+        image: "https://m.media-amazon.com/images/M/MV5BMjExOTY3NzExM15BMl5BanBnXkFtZTgwOTg1OTAzMTE@._V1_.jpg"
     },
     {
         id: 2,

@@ -7,7 +7,7 @@ import "../style/show.css"
 function Show() {
 
 
-    // use the useEffect hook to send GET request 
+    // uses the useEffect hook to fetch GETdata 
   useEffect(() => {
     getAllEntries();
   }, []); // []---> argument to prevent infinite loop. (only runs on render).
@@ -29,7 +29,7 @@ function Show() {
 
     // adds the data retrieved from GET request to state
       setEntries(respond.data);
-
+console.log(respond.data);
     } catch (err) {
       alert(err.message);
     }
