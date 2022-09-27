@@ -1,6 +1,6 @@
 # Travel Moire VZ. 2
 
-#### TravelMoire is a Full Stack React CRUD web appliction that was created to encourage traveling and discovering new adventures around the world.
+#### TravelMoire is a Full Stack React CRUD web appliction that was created to encourage traveling and the discovery of new adventures around the world.
 
 <img width="1411" alt="Screen Shot 2022-09-27 at 1 17 37 AM" src="https://user-images.githubusercontent.com/103911002/192438329-84c4e21b-6106-4fde-8bcc-f098cf1a8e8f.png">
 
