@@ -6,6 +6,7 @@ import User from "../components/User.jsx";
 import users from "./data/users";
 
 // import the user const/data
+// create user component 
 function newUser(newbie) {
   return (
     <User
@@ -42,8 +43,10 @@ function Home() {
         <div className="rest">Restaurants</div>
         <div className="cafe">Cafes</div>
       </div>
-      {/* map through data */}
+      
+      {/* calls newUser function to map through user data */}
       <div className="map">{users.map(newUser)}</div>
+       {/* use hook in button to navigate to other pages */}
       <div className="createNewButton" onClick={() => navigate("/create")}>
         Create A New Post
       </div>
@@ -55,3 +58,5 @@ function Home() {
 }
 
 export default Home;
+
+
