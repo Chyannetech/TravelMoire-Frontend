@@ -23,7 +23,7 @@ function Show() {
     // if request is fulfilled, sets the response data in state
     try {
       const respond = await axios.get(
-        "http://travelmoire2.herokuapp.com/travelmoire/entries/get-entry"
+        "https://travelmoire2.herokuapp.com/travelmoire/entries/get-entry"
       );
 
     // adds the data retrieved from GET request to state
