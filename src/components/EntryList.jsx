@@ -9,7 +9,7 @@ function EntryList(props) {
   const deleteEntries = async (id)  => {
     try {
       await axios.delete(
-        `http://localhost:8000/travelmoire/entries/delete/${id}`
+        `https://travelmoire2.herokuapp.com/travelmoire/entries/delete/${id}`
       );
       navigate("/show")
       } catch (error) {
