@@ -85,14 +85,19 @@ const {entries} = props;
 * Connect User Authentication to Login Form 
 
 ## Deployment [Project URL] 
-#### View the deployed app [here.](https://gorgeous-scone-e56fa5.netlify.app/show)
+#### View the deployed app [here.](https://gorgeous-scone-e56fa5.netlify.app/)
 
 ## SWOT Analysis
 ### Strengths:
 I really enjoyd styling the components in React. I was able to set my main structure up fairly quickly to mimic the wireframe. Also, the database and routes for CRUD functionality was pretty simple to set up this time around on the backend. 
 
 ### Weaknesses:
-Properly executing methods in functional and class components in React is still an opportunity area.
+Properly executing methods in functional and class components in React is still an opportunity area. 
 
 ### Opportunities:
 To reinforce all of the concepts learned during this project and to familiarize myself further with using forms and other hooks to continue developing my ideas. Also, continue developing CSS to mimic wireframe in certain areas.
+
+## Code Issues and Solutions
+> The database would not connect after deployment. I used heroku to deploy my backend and had to set the app's environemnt variables in heroku and add a procfile to my root folder to specify the commands for heroku to execite on start-up. From there I realized that the dependencies in package.json also needed to be changed from server.js to index.js. I also had to allow IP access in mongoDB. 
+
+> I used netlify to deploy the frontend and had issues as well. My GET requests were being blocked due to a mixed-content error served over http. I changed each route to https and that fixed it. 
