@@ -98,6 +98,6 @@ Properly executing methods in functional and class components in React is still 
 To reinforce all of the concepts learned during this project and to familiarize myself further with using forms and other hooks to continue developing my ideas. Also, continue developing CSS to mimic wireframe in certain areas.
 
 ## Code Issues and Solutions
-> The database would not connect after deployment. I used heroku to deploy my backend and had to set the app's environemnt variables in heroku and add a procfile to my root folder to specify the commands for heroku to execite on start-up. From there I realized that the dependencies in package.json also needed to be changed from server.js to index.js. I also had to allow IP access in mongoDB. 
+> The database would not connect after deployment. I used heroku to deploy my backend and had to set the environemnt variables in heroku and add a procfile to my root folder to specify the commands for heroku to execute properly at start-up. From there I realized that the dependencies in the package.json file also needed to be changed from server.js to index.js. I also had to allow IP access in mongoDB. 
 
 > I used netlify to deploy the frontend and had issues as well. My GET requests were being blocked due to a mixed-content error served over http. I changed each route to https and that fixed it. 
