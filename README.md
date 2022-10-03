@@ -85,7 +85,7 @@ const {entries} = props;
 * Connect User Authentication to Login Form 
 
 ## Deployment [Project URL] 
-#### View the deployed app [here.](https://travelmoire2.herokuapp.com/)
+#### View the deployed app [here.](https://gorgeous-scone-e56fa5.netlify.app/show)
 
 ## SWOT Analysis
 ### Strengths:
