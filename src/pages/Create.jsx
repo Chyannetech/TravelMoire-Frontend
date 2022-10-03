@@ -29,7 +29,7 @@ console.log(entry)
 //  pulls api data from post route using asynchronous HTTP request to REST endpoint
   const handleSubmit = async () => {
  try {
-  await axios.post("http://travelmoire2.herokuapp.com/travelmoire/entries/create-entry",entry)
+  await axios.post("https://travelmoire2.herokuapp.com/travelmoire/entries/create-entry",entry)
   navigate("/show")
  } catch (error) {
   console.log("error message", error.message)
