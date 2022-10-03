@@ -6,8 +6,6 @@ import Create from "./pages/Create";
 import Show from "./pages/Show";
 
 
-
-
 function App() {
   return (
     <div className="App">
