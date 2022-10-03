@@ -5,7 +5,7 @@ function Users(props) {
     <div>
       <div className="userPost">
         <div className="userBox">
-          <img className="userPic" src={props.image} />
+          <img className="userPic" src={props.image} alt="userimg"/>
           <div className="name">{props.name}</div>
           <div className="city">{props.city}</div>
           <div className="view">View Media</div>

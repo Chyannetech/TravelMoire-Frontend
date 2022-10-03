@@ -30,7 +30,7 @@ function EntryList(props) {
               <div className="listLocation">{entry.location}</div>
               <div className="listPlace">{entry.place}</div>
               <div className="listCategory">{entry.category}</div>
-              <img className="userPic2" src={entry.image}></img>
+              <img className="userPic2" src={entry.image} alt="users"></img>
               <button onClick={()=> deleteEntries(entry._id)} className="delete"></button>
             </div>
           </div>
